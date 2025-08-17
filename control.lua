@@ -1,5 +1,5 @@
 local base_util = require("__core__/lualib/util")
-local small_ruins = {require("ruins/small-fluid-burner"), require("ruins/small-reinforced-windturbines"),  require("ruins/small-sentinel-outpost")}
+local small_ruins = { require("ruins/small-flare-stack"), require("ruins/small-reinforced-windturbines"), require("ruins/small-sentinel-outpost")}
 local medium_ruins = {require("ruins/medium-creep-biomass"), require("ruins/medium-fuel-plant"), require("ruins/medium-tree-greenhouse")}
 local large_ruin = require("ruins/large-matter-plant")
 
