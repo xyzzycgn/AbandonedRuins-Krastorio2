@@ -1,5 +1,6 @@
 return
 {
+  name = "small-reinforced-windturbines",
   entities =
   {
     {"kr-wind-turbine", {x = 2.5, y = -3}, {}},

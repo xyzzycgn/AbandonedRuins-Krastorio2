@@ -1,5 +1,6 @@
 return
 {
+  name = "medium-tree-greenhouse",
   entities =
   {
     {"tree-01-stump", {x = -6.82, y = -5.93}, {dir = "east", }},

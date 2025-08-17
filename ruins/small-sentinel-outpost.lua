@@ -1,5 +1,6 @@
 return
 {
+  name = "small-sentinel-outpost",
   entities =
   {
     {"small-electric-pole-remnants", {x = -1.5, y = -2.5}, {}},
