@@ -3,9 +3,19 @@ local small_ruins = {require("ruins/small-fluid-burner"), require("ruins/small-r
 local medium_ruins = {require("ruins/medium-creep-biomass"), require("ruins/medium-fuel-plant"), require("ruins/medium-tree-greenhouse")}
 local large_ruin = require("ruins/large-matter-plant")
 
+local function empty_base()
+    log("[WARN] - got nil from get_ruin_set ")
+    return {
+      small = {},
+      medium = {},
+      large = {}
+    }
+end
+
+
 local function make_ruin_set()
   -- Get the base ruin set of the AbandonedRuins mod. This creates a copy of that ruin set.
-  local base_ruins = remote.call("AbandonedRuins", "get_ruin_set", "base")
+  local base_ruins = remote.call("AbandonedRuins", "get_ruin_set", "base") or empty_base()
 
   -- Add the custom Krastorio2 ruins to the existing ruins.
   for _, ruin in pairs(small_ruins) do
@@ -16,21 +26,17 @@ local function make_ruin_set()
   end
   table.insert(base_ruins.large, large_ruin)
 
-  if settings.startup["kr-more-realistic-weapon"].value then
+  log(serpent.block(base_ruins, {maxlevel = 3}))
+
+  if settings.startup["kr-realistic-weapons"].value then
     -- With the weapon overhaul, turrets use the krastorio2 ammo instead of base game ammo.
     --  So, replace those spawned items within the ruins.
-    replace_item_name_in_all_ruins(base_ruins, "firearm-magazine", "rifle-magazine")
-    replace_item_name_in_all_ruins(base_ruins, "piercing-rounds-magazine", "armor-piercing-rifle-magazine")
-  end
-
-  if settings.startup["kr-rebalance-vehicles&fuels"].value then
-    -- With the fuel overhaul, vehicles use the krastorio2 fuel instead of base game solid fuel.
-    --  So, replace those spawned items within the ruins.
-    replace_item_name_in_all_ruins(base_ruins, "solid-fuel", "fuel")
+    replace_item_name_in_all_ruins(base_ruins, "firearm-magazine", "kr-rifle-magazine")
+    replace_item_name_in_all_ruins(base_ruins, "piercing-rounds-magazine", "kr-armor-piercing-rifle-magazine")
   end
 
   -- Provide the extended and modified ruin set as the "krastorio2" set.
-  remote.call("AbandonedRuins", "add_ruin_set", "krastorio2", base_ruins.small, base_ruins.medium, base_ruins.large)
+  remote.call("AbandonedRuins", "add_ruin_sets", "krastorio2", base_ruins)
 end
 
 -- The ruin set is created always when the game is loaded, since the ruin sets are not save/loaded by AbandonedRuins.

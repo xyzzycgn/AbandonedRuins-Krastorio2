@@ -1,5 +1,6 @@
 return
 {
+  name = "large-matter-plant",
   entities =
   {
     {"kr-mineral-water-pumpjack-remnant", {x = -4.5, y = -11.5}, {dir = "south", }},

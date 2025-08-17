@@ -1,5 +1,6 @@
 return
 {
+  name = "small-fluid-burner",
   entities =
   {
     {"kr-fluid-burner", {x = 2, y = -3}, {}},

@@ -1,5 +1,6 @@
 return
 {
+  name = "medium-creep-biomass",
   entities =
   {
     {"kr-bio-lab", {x = -3.5, y = -3.5}, {}},
