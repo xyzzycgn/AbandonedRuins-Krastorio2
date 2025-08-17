@@ -1,11 +1,11 @@
 {
-  "name": "AbandonedRuins-Krastorio2",
-  "version": "0.1.4",
-  "title": "The Ruins Mod - Krastorio2",
-  "homepage": "https://github.com/Bilka2/AbandonedRuins-Krastorio2",
-  "author": "Bilka",
+  "name": "AbandonedRuins-Krastorio2_forked",
+  "version": "1.0.0",
+  "title": "The Ruins Mod - Krastorio2 (forked)",
+  "homepage": "https://github.com/xyzzycgn/AbandonedRuins-Krastorio2",
+  "author": "xyzzycgn, Bilka",
   "factorio_version": "2.0",
-  "description": "Adds a Krastorio2 ruin set to 'The Ruins Mod'",
+  "description": "Extends 'Abandoned Ruins - Base Set' with a Krastorio2 ruin set. Compatible with V2 of factorio and Krastorio2",
   "dependencies": [
       "base >= 2.0.60",
       "AbandonedRuins-base >= 0.1.2",

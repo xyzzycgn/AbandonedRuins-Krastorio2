@@ -1,5 +1,6 @@
-# The Ruins Mod - Krastorio2
+# The Ruins Mod - Krastorio2 - Updated to Factorio 2.0
 
-Adds a Krastorio2 ruin set to [The Ruins Mod](https://github.com/Bilka2/AbandonedRuins).
+Adds a Krastorio2 ruin set to [Abandoned Ruins - Updated (core)](https://mods.factorio.com/mod/AbandonedRuins_updated_fork).
 
-This mod also serves as an example for how to make a custom ruin set for "The Ruins Mod". The documentation for ruin sets can be found within The Ruins Mod: https://github.com/Bilka2/AbandonedRuins/blob/master/docs/ruin_sets.md
+This mod is intended as replacement for [The Ruins Mod - Krastorio2 ](https://mods.factorio.com/mod/AbandonedRuins-Krastorio2)
+which is neither compatible with actual versions of factorio nor Krastorio2. 
