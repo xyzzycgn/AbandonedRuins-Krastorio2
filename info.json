@@ -1,7 +1,7 @@
 {
   "name": "AbandonedRuins-Krastorio2_forked",
   "version": "1.0.1",
-  "title": "The Ruins Mod - Krastorio2 (forked)",
+  "title": "Abandoned Ruins - Krastorio2 (forked)",
   "homepage": "https://github.com/xyzzycgn/AbandonedRuins-Krastorio2",
   "author": "xyzzycgn, Bilka",
   "factorio_version": "2.0",
@@ -9,7 +9,8 @@
   "dependencies": [
       "base >= 2.0.60",
       "AbandonedRuins-base >= 0.1.2",
-      "Krastorio2 >= 2.0.8"
+      "? Krastorio2 >= 2.0.8",
+      "? Krastorio2-spaced-out >= 1.4.11"
   ],
   "package":
   { 
