@@ -1,5 +1,5 @@
 ---------------------------------------------------------------------------------------------------
-Version: 1.0.0
+Version: 1.0.1
 Date: 2025-08-18
   Features:
     - compatibility with both Krastorio2 and Krastorio2-spaced-out introduced
