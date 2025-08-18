@@ -1,7 +1,15 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.0
+Date: 2025-08-18
+  Features:
+    - compatibility with both Krastorio2 and Krastorio2-spaced-out introduced
+  Changes:
+    - changed Krastorio2 dependency to optional
+    - added Krastorio2-spaced-out as new optional dependency
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
 Date: 2025-08-17
   Major Features:
     - migrated to factorio V2
     - migrated to Krastorio V2
-    - migrated to AbandonedRuins-base
+    - migrated to Abandoned Ruins - Updated (core) as framework for generating ruins
