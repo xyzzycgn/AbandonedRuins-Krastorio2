@@ -1,6 +1,6 @@
 {
   "name": "AbandonedRuins-Krastorio2_forked",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "title": "Abandoned Ruins - Krastorio2 (forked)",
   "homepage": "https://github.com/xyzzycgn/AbandonedRuins-Krastorio2",
   "author": "xyzzycgn, Bilka",
@@ -21,4 +21,5 @@
     }
   }
 }
+
 
