@@ -4,4 +4,5 @@ mod_info:
   title: AbandonedRuins-Krastorio2 (forked)
   attach_source_link: true
   license: mit
+  category: content
   tag: environment
