@@ -26,7 +26,8 @@ local function make_ruin_set()
   end
   table.insert(base_ruins.large, large_ruin)
 
-  if settings.startup["kr-realistic-weapons"].value then
+  local krw = settings.startup["kr-realistic-weapons"]
+  if krw and krw.value then
     -- With the weapon overhaul, turrets use the krastorio2 ammo instead of base game ammo.
     --  So, replace those spawned items within the ruins.
     replace_item_name_in_all_ruins(base_ruins, "firearm-magazine", "kr-rifle-magazine")
