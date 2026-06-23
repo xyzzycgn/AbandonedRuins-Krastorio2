@@ -1,25 +1,17 @@
 {
   "name": "AbandonedRuins-Krastorio2_forked",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "title": "Abandoned Ruins - Krastorio2 (forked)",
   "homepage": "https://github.com/xyzzycgn/AbandonedRuins-Krastorio2",
   "author": "xyzzycgn, Bilka",
-  "factorio_version": "2.0",
+  "factorio_version": "2.1",
   "description": "Extends 'Abandoned Ruins - Base Set' with a Krastorio2 ruin set. Compatible with V2 of factorio and Krastorio2 / Krastorio2 Spaced Out",
   "dependencies": [
-      "base >= 2.0.60",
-      "AbandonedRuins-base >= 0.1.2",
-      "? Krastorio2 >= 2.0.8",
-      "? Krastorio2-spaced-out >= 1.4.12"
-  ],
-  "package":
-  { 
-    "scripts":
-    {
-      "prepackage": "./scripts/extract_changes.sh",
-      "postpublish": "./scripts/github_release.sh"
-    }
-  }
+      "base >= 2.1.7",
+      "AbandonedRuins-base >= 0.2.0",
+      "? Krastorio2 >= 2.1.1",
+      "? Krastorio2-spaced-out >= 2.0.5"
+  ]
 }
 
 
